@@ -1,0 +1,30 @@
+Name,Memo,Id,Files,role,affiliation,expertise,involvement,dt_case
+A01,,1,0,Primary Investigator,University,Health Psychology,Reporting,A
+A02,,2,2,Research Associate,University,Health Psychology,Reporting,A
+A03,,3,1,Research Associate,University,Health Psychology,Conducting,A
+A04,,4,1,Research Associate,University,Health Psychology,Reporting,A
+A05,,5,1,Subject mater expert,Patient Advocacy Group,Implementation,Reporting,A
+A06,,6,1,Research Associate,Patient Advocacy Group,Health Psychology,Planning,A
+A07,,7,0,Research Associate,Patient Advocacy Group,Health Psychology,Planning,A
+A08,,8,0,Subject matter expert,Health Insurance,Implementation,Conducting,A
+A09,,9,0,Consultant,App Development Company,Project management,Conducting,A
+B01,,10,0,Co-primary Investigator,University,Health Psychology,Reporting,B
+B02,,11,0,Co-primary Investigator,Primary care clinic,Medicine,Reporting,B
+B03,,12,4,Research Associate,University,Health Psychology,Reporting,B
+B04,,13,0,Research Associate,University,Health Psychology,Reporting,B
+B05,,14,0,Research Associate,University,Health Psychology,Reporting,B
+B06,,15,2,Project manager,App Development Company,Project management,Conducting,B
+B07,,16,2,Subject matter expert,Primary care clinic,Medicine,Conducting,B
+B08,,17,1,Developer,App Development Company,App development,Conducting,B
+B09,,18,2,Subject matter expert,Primary care clinic,Medicine,Conducting,B
+B10,,19,2,Developer,App Development Company,App development,Conducting,B
+C01,,20,4,Project manager,App Development Company,Project management,Reporting,C
+C02,,21,0,Cardiologist,Tertiary care clinic,Cardiology,Conducting,C
+C03,,22,2,Research Associate,App Development Company,Health Psychology,Reporting,C
+C04,,23,0,Subject matter expert,University,Health Psychology,Reporting,C
+C05,,24,0,Research Associate,University,Health Psychology,Planning,C
+C06,,25,0,Research Associate,University,Health Psychology,Planning,C
+C07,,26,0,Research Associate,University,Health Psychology,Planning,C
+C08,,27,0,Subject matter expert,App Development Company,Cardiology,Reporting,C
+C09,,28,2,Subject matter expert,App Development Company,Regulatory compliance,Reporting,C
+C10,,29,2,Subject matter expert,App Development Copmany,Cardiology,Reporting,C
