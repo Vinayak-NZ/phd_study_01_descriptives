@@ -34,7 +34,11 @@ plot_challenges_A <-
         legend.spacing.x = unit(0, "pt")) 
 
 ggsave("output/plot_challenges_A.png", 
-       plot = plot_challenges_A)
+       plot = plot_challenges_A, 
+       width = 500, 
+       heigh = 500, 
+       unit = "mm", 
+       dpi = 300)
 
 plot_challenges_B <- 
   ggplot(challenges_dt_case_B, 

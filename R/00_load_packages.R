@@ -1,2 +1,8 @@
 library(ggplot2)
 library(tidytext)
+library(Gmisc, quietly = TRUE)
+library(glue)
+library(htmlTable)
+library(grid)
+library(magrittr)
+library(data.table)
