@@ -10,3 +10,7 @@ source("R/03_derive_tables.R")
 source("R/04_create_plot_labels.R")
 source("R/05_visualise_challenges.R")
 source("R/05_visualise_facilitators.R")
+
+## ---- rankings
+source("R/07_create_rankings.R")
+source("R/08_output_rankings.R")

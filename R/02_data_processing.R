@@ -82,3 +82,21 @@ facilitators_final$academic <- ifelse(
   facilitators_final$affiliation == "University", 
   1, 0)
 
+## ---- create-code-name-table
+
+challenges_code_label_dt <- unique(challenges_final[, c("code", "code_number")])
+
+facilitators_code_label_dt <- unique(facilitators_final[, c("code", "code_number")])
+
+colnames(challenges_code_label_dt)[colnames(challenges_code_label_dt) == 'code'] <- 
+  'label'
+
+colnames(challenges_code_label_dt)[colnames(challenges_code_label_dt) == 'code_number'] <- 
+  'code'
+
+colnames(facilitators_code_label_dt)[colnames(facilitators_code_label_dt) == 'code'] <- 
+  'label'
+
+colnames(facilitators_code_label_dt)[colnames(facilitators_code_label_dt) == 'code_number'] <- 
+  'code'
+
