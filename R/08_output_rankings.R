@@ -135,11 +135,11 @@ challenges_na <- cbind(c_na_list[[1]],
 # facilitators-important
 f_imp_max <- max(nrow(facilitators_dt_case_A_imp), 
                  nrow(facilitators_dt_case_B_imp), 
-                 nrow(facilitators_dt_case_f_imp))
+                 nrow(facilitators_dt_case_C_imp))
 
 f_imp_list <- list(facilitators_dt_case_A_imp, 
                    facilitators_dt_case_B_imp, 
-                   facilitators_dt_case_f_imp)
+                   facilitators_dt_case_C_imp)
 
 code_rep <- c("code_A", "code_B", "code_C")
 
@@ -168,11 +168,11 @@ facilitators_imp <- cbind(f_imp_list[[1]],
 # facilitators-moderate
 f_mod_max <- max(nrow(facilitators_dt_case_A_mod), 
                  nrow(facilitators_dt_case_B_mod), 
-                 nrow(facilitators_dt_case_f_mod))
+                 nrow(facilitators_dt_case_C_mod))
 
 f_mod_list <- list(facilitators_dt_case_A_mod, 
                    facilitators_dt_case_B_mod, 
-                   facilitators_dt_case_f_mod)
+                   facilitators_dt_case_C_mod)
 
 code_rep <- c("code_A", "code_B", "code_C")
 
@@ -201,11 +201,11 @@ facilitators_mod <- cbind(f_mod_list[[1]],
 # facilitators-low
 f_low_max <- max(nrow(facilitators_dt_case_A_low), 
                  nrow(facilitators_dt_case_B_low), 
-                 nrow(facilitators_dt_case_f_low))
+                 nrow(facilitators_dt_case_C_low))
 
 f_low_list <- list(facilitators_dt_case_A_low, 
                    facilitators_dt_case_B_low, 
-                   facilitators_dt_case_f_low)
+                   facilitators_dt_case_C_low)
 
 code_rep <- c("code_A", "code_B", "code_C")
 
@@ -235,11 +235,11 @@ facilitators_low <- cbind(f_low_list[[1]],
 # facilitators-na
 f_na_max <- max(nrow(facilitators_dt_case_A_na), 
                 nrow(facilitators_dt_case_B_na), 
-                nrow(facilitators_dt_case_f_na))
+                nrow(facilitators_dt_case_C_na))
 
 f_na_list <- list(facilitators_dt_case_A_na, 
                   facilitators_dt_case_B_na, 
-                  facilitators_dt_case_f_na)
+                  facilitators_dt_case_C_na)
 
 code_rep <- c("code_A", "code_B", "code_C")
 
@@ -264,3 +264,15 @@ for(i in 1:length(f_na_list)){
 facilitators_na <- cbind(f_na_list[[1]], 
                          f_na_list[[2]], 
                          f_na_list[[3]])
+
+## ---- save-ranking-tables
+
+write.csv(challenges_imp, "output/challenges_imp.csv")
+write.csv(challenges_mod, "output/challenges_mod.csv")
+write.csv(challenges_low, "output/challenges_low.csv")
+write.csv(challenges_na, "output/challenges_na.csv")
+
+write.csv(facilitators_imp, "output/facilitators_imp.csv")
+write.csv(facilitators_mod, "output/facilitators_mod.csv")
+write.csv(facilitators_low, "output/facilitators_low.csv")
+write.csv(challenges_na, "output/challenges_na.csv")
