@@ -2,6 +2,8 @@
 "9","C10","Lack of diverse perspectives","C03","Competing needs","C02","Unclear expectations"
 "3","C03","Competing needs","C20","Limited flexibility or adaptiveness","C05","Difficult co-creator relationships"
 "14","C17","Mistrust","C01","Broad scope","C20","Limited flexibility or adaptiveness"
-"12","C13","Turnover",NA,NA,NA,NA
-"1","C01","Broad scope",NA,NA,NA,NA
-"4","C04","Language or custom differences",NA,NA,NA,NA
+"12","C13","Turnover","C04","Language or custom differences","C01","Broad scope"
+"1","C01","Broad scope","C07","Limited exchange","C06","Poor planning of collaboration"
+"4","C04","Language or custom differences","C11","Difficulties recruiting co-creators","C12","Difficulties in finding support"
+"7",NA,NA,"C19","Difficulties distributing workload",NA,NA
+"8",NA,NA,"C21","Lack of a prototype",NA,NA

@@ -18,11 +18,11 @@ challenges_dt_case_A_quant <-
            c(.33, .66))
 
 challenges_dt_case_A_imp <- 
-  challenges_dt_case_A[challenges_dt_case_A$percentage > challenges_dt_case_A_quant[[2]], 
+  challenges_dt_case_A[challenges_dt_case_A$percentage >= challenges_dt_case_A_quant[[2]], 
                        c("code", "label")]
 
 challenges_dt_case_A_mod <- 
-  challenges_dt_case_A[challenges_dt_case_A$percentage > challenges_dt_case_A_quant[[1]] & 
+  challenges_dt_case_A[challenges_dt_case_A$percentage >= challenges_dt_case_A_quant[[1]] & 
                          challenges_dt_case_A$percentage < challenges_dt_case_A_quant[[2]], 
                        c("code", "label")]
 
@@ -72,7 +72,7 @@ facilitators_dt_case_A_imp <-
                          c("code", "label")]
 
 facilitators_dt_case_A_mod <- 
-  facilitators_dt_case_A[facilitators_dt_case_A$percentage > facilitators_dt_case_A_quant[[1]] & 
+  facilitators_dt_case_A[facilitators_dt_case_A$percentage >= facilitators_dt_case_A_quant[[1]] & 
                            facilitators_dt_case_A$percentage < facilitators_dt_case_A_quant[[2]], 
                          c("code", "label")]
 
@@ -120,7 +120,7 @@ challenges_dt_case_B_imp <-
                        c("code", "label")]
 
 challenges_dt_case_B_mod <- 
-  challenges_dt_case_B[challenges_dt_case_B$percentage > challenges_dt_case_B_quant[[1]] & 
+  challenges_dt_case_B[challenges_dt_case_B$percentage >= challenges_dt_case_B_quant[[1]] & 
                          challenges_dt_case_B$percentage < challenges_dt_case_B_quant[[2]], 
                        c("code", "label")]
 
@@ -165,7 +165,7 @@ facilitators_dt_case_B_imp <-
                          c("code", "label")]
 
 facilitators_dt_case_B_mod <- 
-  facilitators_dt_case_B[facilitators_dt_case_B$percentage > facilitators_dt_case_B_quant[[1]] & 
+  facilitators_dt_case_B[facilitators_dt_case_B$percentage >= facilitators_dt_case_B_quant[[1]] & 
                            facilitators_dt_case_B$percentage < facilitators_dt_case_B_quant[[2]], 
                          c("code", "label")]
 
@@ -209,11 +209,11 @@ challenges_dt_case_C_quant <-
            c(.33, .66))
 
 challenges_dt_case_C_imp <- 
-  challenges_dt_case_C[challenges_dt_case_C$percentage > challenges_dt_case_C_quant[[2]], 
+  challenges_dt_case_C[challenges_dt_case_C$percentage >= challenges_dt_case_C_quant[[2]], 
                        c("code", "label")]
 
 challenges_dt_case_C_mod <- 
-  challenges_dt_case_C[challenges_dt_case_C$percentage > challenges_dt_case_C_quant[[1]] & 
+  challenges_dt_case_C[challenges_dt_case_C$percentage >= challenges_dt_case_C_quant[[1]] & 
                          challenges_dt_case_C$percentage < challenges_dt_case_C_quant[[2]], 
                        c("code", "label")]
 
