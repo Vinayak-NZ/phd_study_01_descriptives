@@ -100,3 +100,56 @@ colnames(facilitators_code_label_dt)[colnames(facilitators_code_label_dt) == 'co
 colnames(facilitators_code_label_dt)[colnames(facilitators_code_label_dt) == 'code_number'] <- 
   'code'
 
+
+## ---- edit-cross-case-challenges
+
+cross_case_challenges$case <- 
+  factor(cross_case_challenges$case, 
+         levels = c("A", 
+                    "B", 
+                    "C"))
+
+cross_case_challenges$challenge_imp_label <- 
+  factor(cross_case_challenges$challenge_imp_label, 
+         levels = c("Unclear expectations", 
+                    "Competing needs", 
+                    "Language or custom differences", 
+                    "Difficult co-creator relationships",
+                    "Poor planning of collaboration",
+                    "Limited exchange",
+                    "Resource constraints",
+                    "Difficulties recruiting co-creators",
+                    "Failure to acknowledge",
+                    "Skills or knowledge gap", 
+                    "Difficulties distributing workload", 
+                    "Other"))
+
+
+cross_case_challenges <- 
+  cross_case_challenges[cross_case_challenges$count > 0, ]
+
+## ---- edit-cross-case-facilitators
+
+cross_case_facilitators$case <- 
+  factor(cross_case_facilitators$case, 
+         levels = c("A", 
+                    "B", 
+                    "C"))
+
+cross_case_facilitators$facilitators_imp_label <- 
+  factor(cross_case_facilitators$facilitators_imp_label, 
+         levels = c("Co-creator exchanges", 
+                    "Leverage strengths", 
+                    "Apadative process", 
+                    "Transparent communication",
+                    "Needs analysis",
+                    "Targeted recruitment",
+                    "Facilitation strategies",
+                    "Feasible design",
+                    "Trust and dependability",
+                    "Prototype or demo", 
+                    "Top-down management"))
+
+
+cross_case_facilitators <- 
+  cross_case_facilitators[cross_case_facilitators$count > 0, ]
