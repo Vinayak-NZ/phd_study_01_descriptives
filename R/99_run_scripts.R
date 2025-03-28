@@ -10,6 +10,8 @@ source("R/03_derive_tables.R")
 source("R/04_create_plot_labels.R")
 source("R/05_visualise_challenges.R")
 source("R/05_visualise_facilitators.R")
+source("R/05_visualise_challenges_top_three.R")
+source("R/05_visualise_facilitators_top_three.R")
 source("R/05_visualise_cross_case_comparison.R")
 
 ## ---- rankings
