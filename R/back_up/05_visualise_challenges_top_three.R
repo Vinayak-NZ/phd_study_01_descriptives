@@ -30,7 +30,8 @@ plot_challenges_top_three <-
   ggplot(challenges_top_three, aes(x = case, y = percentage, fill = code)) +
   geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
   theme_minimal() +
-  scale_fill_viridis_d(option = "D", labels = labels.challenges) + 
+  scale_fill_brewer(palette = "Dark2", 
+                    labels = labels.challenges) + 
   ylim(0, 30) +
   labs(title = paste0("Key Challenges per Case"), 
        subtitle = "Bar chart of top three challenges by case",
@@ -38,19 +39,11 @@ plot_challenges_top_three <-
        fill = "Challenges") +
   xlab("Cases") + 
   ylab("Percentage (within each case)") + 
-  theme(
-    panel.grid.major = element_blank(), 
-    panel.grid.minor = element_blank(),
-    panel.background = element_blank(), 
-    axis.line = element_line(colour = "black"),
-    axis.title = element_text(size = 14),
-    axis.text = element_text(size = 14),
-    legend.text = element_text(size = 14),
-    legend.title = element_text(size = 14),
-    plot.title = element_text(color = "#2F2E41", size = 12, face = "bold"),
-    plot.subtitle = element_text(color = "#454543"),
-    plot.caption = element_text(color = "#454543", face = "italic")
-  )
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        panel.background = element_blank(), axis.line = element_line(colour = "black"), 
+        plot.title = element_text(color = "#2F2E41", size = 12, face = "bold"),
+        plot.subtitle = element_text(color = "#454543"),
+        plot.caption = element_text(color = "#454543", face = "italic")) 
 
 
 plot_challenges_top_three
