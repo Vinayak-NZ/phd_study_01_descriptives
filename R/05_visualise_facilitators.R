@@ -34,7 +34,9 @@ plot_facilitators_A <-
         legend.spacing.x = unit(0, "pt")) 
 
 ggsave("output/plot_facilitators_A.png", 
-       plot = plot_facilitators_A)
+       plot = plot_facilitators_A, 
+       device = 'tiff', 
+       width = 12, height = 6)
 
 plot_facilitators_B <- 
   ggplot(facilitators_dt_case_B, 
@@ -63,7 +65,9 @@ plot_facilitators_B <-
         legend.spacing.x = unit(0, "pt")) 
 
 ggsave("output/plot_facilitators_B.png", 
-       plot = plot_facilitators_B)
+       plot = plot_facilitators_B, 
+       device = 'tiff', 
+       width = 12, height = 6)
 
 plot_facilitators_C <- 
   ggplot(facilitators_dt_case_C, 
@@ -92,4 +96,6 @@ plot_facilitators_C <-
         legend.spacing.x = unit(0, "pt")) 
 
 ggsave("output/plot_facilitators_C.png", 
-       plot = plot_facilitators_C)
+       plot = plot_facilitators_C, 
+       device = 'tiff', 
+       width = 12, height = 6)

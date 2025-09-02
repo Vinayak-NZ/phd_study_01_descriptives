@@ -4,17 +4,17 @@ dhi.labels <- c("DHI A",
                 "DHI B", 
                 "DHI C")
 
-challenges.labels <- c("Unclear expectations", 
-                       "Competing needs", 
+challenges.labels <- c("Unclear \nexpectations", 
+                       "Competing \nneeds", 
                        "Language or \ncustom differences", 
-                       "Difficult co-creator \nrelationships",
+                       "Difficult \nco-creator \nrelationships",
                        "Poor planning of \ncollaboration",
-                       "Limited exchange",
-                       "Resource constraints",
+                       "Limited \nexchange",
+                       "Resource \nconstraints",
                        "Difficulties recruiting \nco-creators",
                        "Failure to \nacknowledge",
                        "Skills or \nknowledge gap", 
-                       "Difficulties distributing \nworkload", 
+                       "Difficulties \ndistributing \nworkload", 
                        "Other")
 
 cc_challenges_plot <- 
@@ -35,20 +35,22 @@ cc_challenges_plot <-
   )
 
 ggsave("output/cc_challenges_plot.png", 
-       plot = cc_challenges_plot)
+       plot = cc_challenges_plot, 
+       device = 'tiff', 
+       width = 12, height = 6)
 
 ## ---- cross-case-facilitators
-facilitators.labels <- c("Co-creator exchanges", 
-                       "Leverage strengths", 
-                       "Adaptive process", 
-                       "Transparent communication",
-                       "Needs analysis",
-                       "Targeted recruitment",
-                       "Facilitation strategies",
-                       "Feasible design",
+facilitators.labels <- c("Co-creator \nexchanges", 
+                       "Leverage \nstrengths", 
+                       "Adaptive \nprocess", 
+                       "Transparent \ncommunication",
+                       "Needs \nanalysis",
+                       "Targeted \nrecruitment",
+                       "Facilitation \nstrategies",
+                       "Feasible \ndesign",
                        "Trust and \ndependability",
                        "Prototype or \ndemo", 
-                       "Top-down management")
+                       "Top-down \nmanagement")
 
 cc_facilitators_plot <- 
   ggplot(cross_case_facilitators, aes(facilitators_imp_label, case)) + 
@@ -68,4 +70,6 @@ cc_facilitators_plot <-
   )
 
 ggsave("output/cc_facilitators_plot.png", 
-       plot = cc_facilitators_plot)
+       plot = cc_facilitators_plot, 
+       device = 'tiff', 
+       width = 12, height = 6)

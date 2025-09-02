@@ -34,11 +34,9 @@ plot_challenges_A <-
         legend.spacing.x = unit(0, "pt")) 
 
 ggsave("output/plot_challenges_A.png", 
-       plot = plot_challenges_A, 
-       width = 500, 
-       heigh = 500, 
-       unit = "mm", 
-       dpi = 300)
+       plot = plot_challenges_A,
+       device = 'tiff', 
+       width = 12, height = 6)
 
 plot_challenges_B <- 
   ggplot(challenges_dt_case_B, 
@@ -67,7 +65,9 @@ plot_challenges_B <-
         legend.spacing.x = unit(0, "pt")) 
 
 ggsave("output/plot_challenges_B.png", 
-       plot = plot_challenges_B)
+       plot = plot_challenges_B, 
+       device = 'tiff', 
+       width = 12, height = 6)
 
 plot_challenges_C <- 
   ggplot(challenges_dt_case_C, 
@@ -95,5 +95,7 @@ plot_challenges_C <-
         legend.key.width = unit(0, "pt"),
         legend.spacing.x = unit(0, "pt")) 
 
-ggsave("output/plot_challenges_C.png", 
-       plot = plot_challenges_C)
+ggsave("output/plot_challenges_C.jpeg", 
+       plot = plot_challenges_C, 
+       device = 'tiff', 
+       width = 12, height = 6)

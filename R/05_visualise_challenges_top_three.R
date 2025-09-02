@@ -34,7 +34,6 @@ plot_challenges_top_three <-
   ylim(0, 30) +
   labs(title = paste0("Key Challenges per Case"), 
        subtitle = "Bar chart of top three challenges by case",
-       caption = "Figure 2. Bar chart of top three challenges and corresponding rates of being coded for within each case", 
        fill = "Challenges") +
   xlab("Cases") + 
   ylab("Percentage (within each case)") + 
